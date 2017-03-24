@@ -4,11 +4,11 @@ function setup(){
   colorMode(HSB,width);
   }
 
-function pixelsquare(){
+function drawSquare(){
   for (var x = 0; x <= width; x=x+20) {
   for (var y = 0; y <= height; y=y+20) {
-  var c=color(x,y,width);
-  fill(c);
+  var a=color(x,y,width);
+  fill(a);
   rect(x,y,20,20);
     }
   }
@@ -18,5 +18,5 @@ function pixelsquare(){
 function draw(){
    background(255);  
    noStroke();
-   pixelsquare();  
+   drawSquare();  
 }
